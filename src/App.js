@@ -3,7 +3,7 @@ import NavMenu from './components/Post/NavMenu';
 import PostedImages from './containers/PostedImages/PostedImages';
 
 const postNames = [];
-for (let i = 0; i < 6; i++) {
+for (let i = 0; i < 11; i++) {
   const postName = `wrestler${i+1}.jpg`;
   postNames.push(postName);
   

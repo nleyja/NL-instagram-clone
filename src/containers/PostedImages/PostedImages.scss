@@ -1,6 +1,7 @@
 .post-gallery {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   margin: 10px;
 }
 
@@ -8,5 +9,5 @@
   background-size: cover;
   width: 200px;
   height: 200px;
-  margin: 5px;
+  margin: 1px;
 }
