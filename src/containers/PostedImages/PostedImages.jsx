@@ -5,15 +5,17 @@ const PostedImages = (props) => {
   const { postNames } = props;
 
   const postElements = postNames.map((postName, index) => {
-    const postRoute = `/images/${postName}`
+    const postRoute = `/images/${postName}`;
 
     return(
-      <div className='img-div' style={{ backgroundImage: `url(${postRoute})`}} key={index}></div>
+      <div className='post-div' style={{ backgroundImage: `url(${postRoute})`}} key={index}></div>
     )
   })
 
   return (
-    <div className="post-gallery"> {postElements}</div>
+    <div className="post-gallery"> 
+      {postElements}
+    </div>
   )
 }
 

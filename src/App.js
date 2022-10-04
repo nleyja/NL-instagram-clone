@@ -1,24 +1,23 @@
 import './App.css';
+import NavMenu from './components/Post/NavMenu';
 import PostedImages from './containers/PostedImages/PostedImages';
 
 const postNames = [];
 for (let i = 0; i < 6; i++) {
-  const postNames = `wrestler${i+1}.jpg`;
-  postNames.push(postNames);
+  const postName = `wrestler${i+1}.jpg`;
+  postNames.push(postName);
   
 }
 function App() {
   return (
     <div className="App">
-      <div>
+      <NavMenu/>
+      <div className='row-layout'>
         <h3>Wrestlers of Instagram</h3>
         <p>The #80's/90's #wrestlersofinstagram</p>
 
         <PostedImages postNames={postNames}/>
       </div>
-
-
-
     </div>
   );
 }
